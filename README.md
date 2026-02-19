@@ -33,19 +33,23 @@ Implementacija algoritama za detekciju i korekciju grešaka:
 1.  **Klonirajte repozitorijum:**
     ```bash
     git clone https://github.com/djuricicmilos/Kompresija-i-zastita-podataka
-    cd Kompresija-i-zastita-podataka
     ```
 
-2.  **Restauracija biblioteka:**
+2. **Navigirajte do projekta:**
+   ```bash
+   cd Kompresija-i-zastita-podataka/Projekat_1
+   cd Kompresija-i-zastita-podataka/Projekat_2
+   ```
+
+3.  **Build-ovanje projekta:**
     ```bash
-    dotnet restore
-    ```
+    dotnet build
+    ``
 
-3.  **Pokretanje aplikacije:**
+4.  **Pokretanje aplikacije:**
     Projekat je konfigurisan kao konzolna aplikacija. Možete ga pokrenuti komandom:
     ```bash
     dotnet run --project PutanjaDoProjekta/Projekat_1.csproj
     dotnet run --project PutanjaDoProjekta/Projekat_2.csproj
     ```
-
 ---
