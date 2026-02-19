@@ -4,7 +4,7 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        string putanjaDoPodataka = Path.Combine("..", "fajlovi", "testFajl.txt");
+        string putanjaDoPodataka = Path.Combine("fajlovi", "testFajl.txt");
         Manager manager = new Manager();
 
         byte[] podaciZaKodiranje = manager.UcitajPodatke(putanjaDoPodataka);
@@ -25,8 +25,8 @@ public class Program
         // Poredjenje fajlova
         // ##################################################################
 
-        string putanjaShannonFanoKodirano = Path.Combine("..", "fajlovi", "shannonFanoKodirano.bin");
-        string putanjaShannonFanoDekodirano = Path.Combine("..", "fajlovi", "shannonFanoDekodirano.bin");
+        string putanjaShannonFanoKodirano = Path.Combine("fajlovi", "shannonFanoKodirano.bin");
+        string putanjaShannonFanoDekodirano = Path.Combine("fajlovi", "shannonFanoDekodirano.bin");
 
         bool istiSu = manager.UporediFajlove(putanjaDoPodataka, putanjaShannonFanoDekodirano);
 
@@ -56,8 +56,8 @@ public class Program
         // Poredjenje fajlova
         // ##################################################################
 
-        string putanjaHuffmanKodirano = Path.Combine("..", "fajlovi", "huffmanKodirano.bin");
-        string putanjaHuffmanDekodirano = Path.Combine("..", "fajlovi", "huffmanDekodirano.bin");
+        string putanjaHuffmanKodirano = Path.Combine("fajlovi", "huffmanKodirano.bin");
+        string putanjaHuffmanDekodirano = Path.Combine("fajlovi", "huffmanDekodirano.bin");
 
         istiSu = manager.UporediFajlove(putanjaDoPodataka, putanjaHuffmanDekodirano);
 
@@ -87,8 +87,8 @@ public class Program
         // Poredjenje fajlova
         // ##################################################################
 
-        string putanjaLZ77Kodirano = Path.Combine("..", "fajlovi", "LZ77Kodirano.bin");
-        string putanjaLZ77Dekodirano = Path.Combine("..", "fajlovi", "LZ77Dekodirano.bin");
+        string putanjaLZ77Kodirano = Path.Combine("fajlovi", "LZ77Kodirano.bin");
+        string putanjaLZ77Dekodirano = Path.Combine("fajlovi", "LZ77Dekodirano.bin");
 
         istiSu = manager.UporediFajlove(putanjaDoPodataka, putanjaLZ77Dekodirano);
 
@@ -118,8 +118,8 @@ public class Program
         // Poredjenje fajlova
         // ##################################################################
 
-        string putanjaLZWKodirano = Path.Combine("..", "fajlovi", "LZWKodirano.bin");
-        string putanjaLZWDekodirano = Path.Combine("..", "fajlovi", "LZWDekodirano.bin");
+        string putanjaLZWKodirano = Path.Combine("fajlovi", "LZWKodirano.bin");
+        string putanjaLZWDekodirano = Path.Combine("fajlovi", "LZWDekodirano.bin");
 
         istiSu = manager.UporediFajlove(putanjaDoPodataka, putanjaLZWDekodirano);
 
@@ -155,8 +155,8 @@ public class Program
 
         ShannonFano shannonFano = new ShannonFano(simboli);
 
-        string putanjaShannonFanoKodirano = Path.Combine("..", "fajlovi", "shannonFanoKodirano.bin");
-        string putanjaShannonFanoDekodirano = Path.Combine("..", "fajlovi", "shannonFanoDekodirano.bin");
+        string putanjaShannonFanoKodirano = Path.Combine("fajlovi", "shannonFanoKodirano.bin");
+        string putanjaShannonFanoDekodirano = Path.Combine("fajlovi", "shannonFanoDekodirano.bin");
 
         Console.WriteLine("SHANNON-FANO ALGORITAM \n");
 
@@ -201,8 +201,8 @@ public class Program
 
         Huffman huffman = new Huffman(simboli);
 
-        string putanjaHuffmanKodirano = Path.Combine("..", "fajlovi", "huffmanKodirano.bin");
-        string putanjaHuffmanDekodirano = Path.Combine("..", "fajlovi", "huffmanDekodirano.bin");
+        string putanjaHuffmanKodirano = Path.Combine("fajlovi", "huffmanKodirano.bin");
+        string putanjaHuffmanDekodirano = Path.Combine("fajlovi", "huffmanDekodirano.bin");
 
         Console.WriteLine("HUFFMAN ALGORITAM \n");
 
@@ -247,8 +247,8 @@ public class Program
     {
         LZ77 LZ77 = new LZ77(4);
 
-        string putanjaLZ77Kodirano = Path.Combine("..", "fajlovi", "LZ77Kodirano.bin");
-        string putanjaLZ77Dekodirano = Path.Combine("..", "fajlovi", "LZ77Dekodirano.bin");
+        string putanjaLZ77Kodirano = Path.Combine("fajlovi", "LZ77Kodirano.bin");
+        string putanjaLZ77Dekodirano = Path.Combine("fajlovi", "LZ77Dekodirano.bin");
 
         Console.WriteLine("LZ77 ALGORITAM \n");
 
@@ -291,8 +291,8 @@ public class Program
     {
         LZW LZW = new LZW();
 
-        string putanjaLZWKodirano = Path.Combine("..", "fajlovi", "LZWKodirano.bin");
-        string putanjaLZWDekodirano = Path.Combine("..", "fajlovi", "LZWDekodirano.bin");
+        string putanjaLZWKodirano = Path.Combine("fajlovi", "LZWKodirano.bin");
+        string putanjaLZWDekodirano = Path.Combine("fajlovi", "LZWDekodirano.bin");
 
         Console.WriteLine("LZW ALGORITAM \n");
 
