@@ -2,7 +2,7 @@
 
 Ovaj repozitorijum sadrži implementaciju algoritama za kompresiju i zaštitu (kodovanje) podataka u okviru kursa Kompresija i zaštita podataka. Projekat je realizovan u **.NET** okruženju koristeći **C#**.
 
-## 📋 Pregled zadataka
+## Pregled zadataka
 
 ### Zadatak 1: Algoritmi kompresije
 Implementacija osnovnih metoda za analizu i redukciju redundansi u podacima:
