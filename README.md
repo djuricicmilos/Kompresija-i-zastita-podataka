@@ -44,7 +44,7 @@ Implementacija algoritama za detekciju i korekciju grešaka:
 3.  **Build-ovanje projekta:**
     ```bash
     dotnet build
-    ``
+    ```
 
 4.  **Pokretanje aplikacije:**
     Projekat je konfigurisan kao konzolna aplikacija. Možete ga pokrenuti komandom:
